@@ -224,7 +224,7 @@ function TeddyModel() {
   );
 }
 
-useGLTF.preload("/models/teddy.glb");
+useGLTF(`${import.meta.env.BASE_URL}models/teddy.glb`)
 
 function Loader() {
   return (
