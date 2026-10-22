@@ -1,0 +1,34 @@
+{
+  "name": "teddy",
+  "private": true,
+  "homepage": "https://github.com/uk556513-stack/teddy/",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.2",
+    "framer-motion": "^14.5.0",
+    "lucide-react": "^1.61.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.88.0",
+    "vite": "^8.3.4"
+  }
+}
