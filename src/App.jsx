@@ -205,9 +205,10 @@ const teddyGallery = [
     image: storyTeddy2,
   },
 ];
-
 function TeddyModel() {
-  const { scene } = useGLTF("/models/teddy.glb");
+  const { scene } = useGLTF(
+    `${import.meta.env.BASE_URL}models/teddy.glb`
+  );
 
   return (
     <Float
@@ -223,9 +224,6 @@ function TeddyModel() {
     </Float>
   );
 }
-
-useGLTF(`${import.meta.env.BASE_URL}models/teddy.glb`)
-
 function Loader() {
   return (
     <motion.div
